@@ -2,7 +2,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 def siteUrl = 'https://github.com/UFreedom/Android-SafeJobIntentService'
-def gitUrl = 'git@github.com:UFreedom/Android-SafeJobIntentService.git'
+def gitUrl = 'https://github.com/UFreedom/Android-SafeJobIntentService'
 group = "com.ufreedom.kit"
 version = "1.0.0"
 
