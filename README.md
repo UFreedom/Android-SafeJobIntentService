@@ -1,16 +1,27 @@
 # Android-SafeJobIntentService
 
- When use Android JobIntentService(support-v4),May be you face crash issue, Even you use [android-job](https://github.com/evernote/android-job/) before 1.3.0-alpha04.
- 
+When use Android JobIntentService(support-v4),May be you face crash issue, Even you use [android-job][1] before 1.3.0-alpha04.[android-job][1] has fix the issue in 1.3.0-alpha04, 
 
-[android-job](https://github.com/evernote/android-job/) has fix the issue in 1.3.0-alpha04, If you don't use [android-job](https://github.com/evernote/android-job/),You can use this repo
+If you don't use [android-job][1],You can use this repo
  
- 
- 
- 
- 
-#### Crash Log
- 
+Usage
+-----
+
+### Step 1
+
+Add dependencies in build.gradle.
+
+```groovy
+    dependencies {
+        compile 'com.ufreedom.kit:safejobintentservice:1.0.0'
+    }
+
+```
+
+
+
+Crash Log
+----- 
  1.
  ```java
  
@@ -59,7 +70,7 @@ issue in [android-job](https://github.com/evernote/android-job/): https://github
 Google Issue Tracker : https://issuetracker.google.com/issues/63622293
 
 
-This code  was copy from [android-job](https://github.com/evernote/android-job/),If yout
+This code  was copy from [android-job](https://github.com/evernote/android-job/).
 
 
 License 
@@ -78,3 +89,7 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+    
+    
+    
+[1]:https://github.com/evernote/android-job
