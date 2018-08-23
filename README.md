@@ -1,14 +1,13 @@
 # Android-SafeJobIntentService
 
-When use Android JobIntentService(support-v4),May be you face crash issue, Even you use [android-job][1] before 1.3.0-alpha04.[android-job][1] has fix the issue in 1.3.0-alpha04, 
+When use Android JobIntentService(support-v4),May be you face crash issue.
 
-If you don't use [android-job][1],You can use this repo
+Even you use [android-job][1] before 1.3.0-alpha04.But [android-job][1] has fix the issue in 1.3.0-alpha04, 
+
+This code  was copy from [android-job][1].If you don't use [android-job][1] but want to solve the problem,You can use this repo
  
 Usage
 -----
-
-### Step 1
-
 Add dependencies in build.gradle.
 
 ```groovy
@@ -63,14 +62,11 @@ Caused by java.lang.SecurityException: Caller no longer running, last stopped +4
 ```
 
 
-### Discuss
+Discuss
+--------
+- issue in [android-job][1]: https://github.com/evernote/android-job/issues/255
 
-issue in [android-job](https://github.com/evernote/android-job/): https://github.com/evernote/android-job/issues/255
-
-Google Issue Tracker : https://issuetracker.google.com/issues/63622293
-
-
-This code  was copy from [android-job](https://github.com/evernote/android-job/).
+- Google Issue Tracker : https://issuetracker.google.com/issues/63622293
 
 
 License 
