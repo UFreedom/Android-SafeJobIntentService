@@ -12,7 +12,7 @@ Add dependencies in build.gradle.
 
 ```groovy
     dependencies {
-        compile 'com.ufreedom.kit:safejobintentservice:1.0.0'
+        compile 'com.ufreedom.kit:safejobintentservice:1.0.1'
     }
 
 ```
