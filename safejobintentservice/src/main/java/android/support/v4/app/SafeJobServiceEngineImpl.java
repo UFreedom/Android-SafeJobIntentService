@@ -44,9 +44,10 @@ public class SafeJobServiceEngineImpl extends JobServiceEngine
                 if (mParams != null) {
                     try {
                         mParams.completeWork(mJobWork);
-                    } catch (SecurityException se) {
-                        // ignore
-                        se.printStackTrace();
+                    } catch (SecurityException | IllegalArgumentException exception) {
+                        // ignore lang.IllegalArgumentException: Given work is not active: JobWorkItem
+                        // ignore SecurityException: Caller no longer running
+                        exception.printStackTrace();
                     }
                 }
             }
